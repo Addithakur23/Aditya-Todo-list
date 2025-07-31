@@ -6,7 +6,7 @@ body {
     justify-content: center;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@ ul{
 }
 
 ul li {
-       width: 17vw;
+    width: 26vw;
     position: relative;
     right: 19px;
     margin: 9px 5px;
@@ -24,9 +24,8 @@ ul li {
     border: 2px solid #c7c4c4;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: flex
-;
-;
+    display: flex;
+    ;
 }
 
 
@@ -39,14 +38,14 @@ ul li {
 }
 
 #task_title {
-    width: 20vw;
+    width: 30vw;
     height: 7vh;
     padding-left: 18px;
 
 }
 
 #task_details {
-    width: 20vw;
+    width: 30vw;
     min-height: 9vh;
     padding-left: 16px;
     padding-top: 11px;
@@ -58,9 +57,9 @@ ul li {
 }
 
 #Add-btn {
-    width: 21.5vw;
+    width: 31.5vw;
     position: relative;
-    left: 2px;
+    left: 5px;
     margin-right: 6px;
     font-family: "Roboto", sans-serif;
     border: none;
@@ -117,9 +116,10 @@ ul li .taskTitle input {
 }
 
 .todoList {
-    width: 24vw;
+    width: 34vw;
+    height: auto;
+    margin-top: 12vh;
     position: relative;
-    height: 75vh;
     border: 2px solid black;
     border-radius: 32px;
     overflow: auto;
@@ -147,12 +147,50 @@ h1 {
     cursor: pointer;
 }
 
-.Add-button{
+.Add-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Add-button button{
+.Add-button button {
     padding-right: 2px;
+}
+
+@media (max-width:1200px) {
+    ul li {
+        width: 37vw;
+    }
+
+    #task_title,
+    #task_details {
+        width: 42vw;
+    }
+
+    #Add-btn {
+        width: 45.5vw;
+    }
+
+    .todoList {
+        width: 54vw;
+    }
+}
+
+@media (max-width:500px) {
+    ul li {
+        width: 73vw;
+    }
+
+    #task_title,
+    #task_details {
+        width: 81vw;
+    }
+
+    #Add-btn {
+        width: 86.5vw;
+    }
+
+    .todoList {
+        width: 98%;
+    }
 }
