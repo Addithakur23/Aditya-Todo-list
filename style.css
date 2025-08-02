@@ -11,7 +11,11 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
+
 }
+
+
 
 ul li {
     width: 26vw;
@@ -22,7 +26,7 @@ ul li {
     height: 11vh;
     border-radius: 11px;
     border: 2px solid #c7c4c4;
-    overflow: hidden;
+    overflow-y: scroll;
     text-overflow: ellipsis;
     display: flex;
     ;
@@ -67,7 +71,7 @@ ul li {
     font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
-    color: rgb(231, 239, 231);
+    color: rgb(255 255 255);
     background-color: rgb(47 113 47);
 }
 
@@ -93,6 +97,7 @@ ul li .taskTitle input {
     font-weight: 490;
     margin: 9px 3px;
     font-family: "Roboto", sans-serif;
+    overflow-wrap: anywhere;
 }
 
 
@@ -102,6 +107,8 @@ ul li .taskTitle input {
     color: #989898;
     font-family: "Roboto", sans-serif;
     font-weight: 350;
+    overflow-wrap: anywhere;
+
 }
 
 .delete-icon {
@@ -117,12 +124,13 @@ ul li .taskTitle input {
 
 .todoList {
     width: 34vw;
-    height: auto;
+    max-height: 74vh;
     margin-top: 12vh;
     position: relative;
     border: 2px solid black;
     border-radius: 32px;
-    overflow: auto;
+   overflow: auto;
+    
 }
 
 .input,
@@ -138,7 +146,47 @@ h1 {
 }
 
 
+ul li::-webkit-scrollbar{
+    width: 4px;
+}
 
+ul li::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+ul li::-webkit-scrollbar-thumb{
+    background-color: #999;
+   border-radius: 10px
+}
+
+
+
+
+.todoList::-webkit-scrollbar{
+    width: 4px;
+}
+
+.todoList::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.todoList::-webkit-scrollbar-thumb{
+    background-color: #999;
+   border-radius: 10px
+}
+
+#task_details::-webkit-scrollbar{
+    width: 4px;
+}
+
+#task_details::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+#task_details::-webkit-scrollbar-thumb{
+    background-color: #999;
+   border-radius: 10px
+}
 
 
 
